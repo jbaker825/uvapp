@@ -16,7 +16,7 @@ const Navbar = () => {
                         <img src={LogoImage} />
                     </div>
                 </div>
-                <div>
+                <div className="font-awesome-icon">
                     <FontAwesomeIcon icon={faBars} />
                 </div>
                 <div className="nav-links">
