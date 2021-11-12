@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +19,39 @@ img {
 }
 
 .home-container {
-  min-height: 550px;
+  /* height: 300px;
+  min-height: 300px; */
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-bottom: 33%;
+}
+
+.home-description {
+  background-color: powderblue;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 15px;
+  color: orangered;
+}
+
+.form-control {
+  margin-bottom: 3rem;
+}
+
+.form-header {
+  margin-bottom: 1rem;
+}
+
+.home-uvsearch {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.home-form-container {
+  width: 250px;
+  text-align: center;
 }
 
 .nav-row {
@@ -22,7 +62,6 @@ img {
 .nav-logo {
   display: flex;
   flex: 30%;
-  background-color: red;
 }
 
 .logo {
@@ -40,6 +79,8 @@ img {
   padding: 1.5rem 1rem 1.5rem 1rem;
   text-decoration: none;
   color: orangered;
+  text-align: center;
+  border-top: 1px solid orangered;
 }
 
 .nav-ul > li > a:hover {
@@ -48,10 +89,38 @@ img {
 
 .font-awesome-icon {
   flex: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.burger {
+  font-size: 2rem;
+  color: orangered;
+  cursor: pointer;
+}
+
+.burger-open {
+  transform: rotate(90deg);
+  color: grey;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.burger-close {
+  transform: rotate(0deg);
+  color: orangered;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .nav-links {
   flex: 100%;
+}
+
+.menu-hidden {
+  display: none;
 }
 
 @media all and (min-width: 600px) {
@@ -66,5 +135,11 @@ img {
   }
   .font-awesome-icon {
     display: none;
+  }
+  .nav-ul > li > a {
+    border-top: 0px;
+  }
+  .menu-hidden {
+    display: block;
   }
 }

@@ -5,9 +5,19 @@ import {
 import LogoImage from '../images/uv.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
 
 
 const Navbar = () => {
+
+    const [menu, setMenu] = useState(false)
+    const toggleMenu = () => {
+        setMenu(
+            oldMenu => {
+                return !oldMenu
+            }
+        )
+    }
     return (
         <nav>
             <div className="nav-row">
@@ -17,9 +27,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="font-awesome-icon">
-                    <FontAwesomeIcon icon={faBars} />
+                    <FontAwesomeIcon onClick={toggleMenu} icon={faBars} className={`burger ${menu ? "burger-open" : "burger-close"}`} />
                 </div>
-                <div className="nav-links">
+                <div className={`nav-links ${menu ? "" : "menu-hidden"}`}>
                     <ul className="nav-ul">
                         <li>
                             <Link to="/">Home</Link>
@@ -33,7 +43,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 
