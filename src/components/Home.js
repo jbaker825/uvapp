@@ -61,7 +61,7 @@ const Home = () => {
                                 </option>
                             </select>
                         </div>
-                        <div>
+                        <div className="form-control">
                             <button>Get Local UV Data</button>
                         </div>
                     </form>
