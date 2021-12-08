@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
     return (
         <div>
-            About
+            Everyone loves the way they look with a nice golden tan. However, prolonged exposure can cause serious harm.
         </div>
     );
 };
