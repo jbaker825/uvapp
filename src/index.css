@@ -62,6 +62,7 @@ img {
 .nav-logo {
   display: flex;
   flex: 30%;
+  width: 3rem;
 }
 
 .logo {

@@ -34,7 +34,7 @@ const Home = () => {
             <div className="home-container" style={{ backgroundImage: `url(${BackgroundImage})` }}>
             </div>
             <div className="home-description">
-                blah blah
+                Going on a trip and want to plan accordingly? How much sunscreen should you bring? How long should you be in the sun for to get the ultimate tan?``
             </div>
             <div className="home-uvsearch">
                 <div className="home-form-container">
