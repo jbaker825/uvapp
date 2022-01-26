@@ -34,7 +34,7 @@ const Home = () => {
             <div className="home-container" style={{ backgroundImage: `url(${BackgroundImage})` }}>
             </div>
             <div className="home-description">
-                Going on a trip and want to plan accordingly? How much sunscreen should you bring? How long should you be in the sun for to get the ultimate tan?``
+                Going on a trip and want to plan accordingly? How much sunscreen should you bring? How long should you be in the sun for to get the ultimate tan? This app does all the heavy lifting for you. Utilizng various UV indexes and calculations, we are able to calculate the most optimal amount of time for you to be in the sun. All you have to do is input your skin tone and city name below. Then the calculations will be made, and you will be provided with a tailored breakdown of your results.
             </div>
             <div className="home-uvsearch">
                 <div className="home-form-container">
